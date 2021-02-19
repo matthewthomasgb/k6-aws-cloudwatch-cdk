@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshot 1`] = `
+Object {
+  "Resources": Object {
+    "DashCCD7F836": Object {
+      "Properties": Object {
+        "DashboardBody": "{\\"widgets\\":[]}",
+        "DashboardName": "k6-aws-cloudwatch-cdk",
+      },
+      "Type": "AWS::CloudWatch::Dashboard",
+    },
+  },
+}
+`;
