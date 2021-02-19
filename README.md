@@ -15,8 +15,16 @@ Delivered using TDD technique.
 
 ### Resources used for development
 [aws-cloudwatch module](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-cloudwatch-readme.html), specifically the [dashboard construct](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-cloudwatch.Dashboard.html)
+- Understand the constructs 
+
+CloudFormation resource [AWS::CloudWatch::Dashboard](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html)
+- Understand the CloudFormation yaml for Cloudwatch
+
+Cloudwatch API reference [Dashboard Body Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html)
+- Understand the structure of the DashboardBody 
 
 [K6 metrics](https://k6.io/docs/using-k6/metrics)
+- Understand the metrics to display in graphs
 
 # Welcome to your CDK TypeScript project!
 
