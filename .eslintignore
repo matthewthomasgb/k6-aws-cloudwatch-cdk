@@ -1,0 +1,15 @@
+# hidden files
+.*
+
+# build
+build
+
+# reports
+reports
+
+# cdk.out
+cdk.out
+
+# node_modules
+node_modules
+
