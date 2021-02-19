@@ -26,6 +26,8 @@ Cloudwatch API reference [Dashboard Body Structure and Syntax](https://docs.aws.
 [K6 metrics](https://k6.io/docs/using-k6/metrics)
 - Understand the metrics to display in graphs
 
+[Testing utilities and assertions for CDK libraries](https://github.com/aws/aws-cdk/tree/master/packages/%40aws-cdk/assert)
+- Understand @aws-cdk/assert
 # Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
