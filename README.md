@@ -1,4 +1,5 @@
 # k6-aws-cloudwatch-cdk
+ ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/matthewthomasgb/k6-aws-cloudwatch-cdk?label=version) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/matthewthomasgb/k6-aws-cloudwatch-cdk/main-release) [![Known Vulnerabilities](https://snyk.io/test/github/matthewthomasgb/k6-aws-cloudwatch-cdk/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matthewthomasgb/k6-aws-cloudwatch-cdk?targetFile=package.json)
 
 An AWS cloudwatch dashboard containing graphs for k6 performance metrics. 
 
