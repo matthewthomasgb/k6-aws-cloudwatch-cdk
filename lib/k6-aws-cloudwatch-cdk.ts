@@ -1,5 +1,6 @@
 import { Dashboard, TextWidget } from '@aws-cdk/aws-cloudwatch';
 import { Stack, StackProps, Construct } from '@aws-cdk/core';
+import { k6Widget, k6Metric } from './helpers/common-components';
 
 export class K6AwsCloudwatchCdkStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -11,6 +12,10 @@ export class K6AwsCloudwatchCdkStack extends Stack {
 
     dashboard.addWidgets(
       new TextWidget({ markdown: '# K6', width: 24, height: 1 }),
+    );
+
+    dashboard.addWidgets(
+      k6Widget('Virtual users', [k6Metric('k6_vus', 'Virtual users', 'gauge')]),
     );
   }
 }

@@ -5,7 +5,7 @@ import {
   GRID_WIDTH,
   TextWidgetProps,
 } from '@aws-cdk/aws-cloudwatch';
-import { createStack } from './helpers/helpers';
+import { createStack, getDashboardBody } from './helpers/helpers';
 import { Widgets } from './helpers/widgets';
 let k6HeaderProps: TextWidgetProps;
 let k6HeaderWidget: ConcreteWidget;
@@ -15,9 +15,8 @@ beforeEach(() => {
   expect(createStack()).toHaveResourceLike('AWS::CloudWatch::Dashboard', {
     DashboardBody: arn1.capture(),
   });
-  k6HeaderWidget = JSON.parse(arn1.capturedValue).widgets[Widgets.K6Header];
-  k6HeaderProps = JSON.parse(arn1.capturedValue).widgets[Widgets.K6Header]
-    .properties;
+  k6HeaderWidget = getDashboardBody().widgets[Widgets.K6Header];
+  k6HeaderProps = getDashboardBody().widgets[Widgets.K6Header].properties;
 });
 
 test('header TextWidget contains markdown property with value # k6', () => {

@@ -5,7 +5,18 @@ Object {
   "Resources": Object {
     "DashCCD7F836": Object {
       "Properties": Object {
-        "DashboardBody": "{\\"widgets\\":[{\\"type\\":\\"text\\",\\"width\\":24,\\"height\\":1,\\"x\\":0,\\"y\\":0,\\"properties\\":{\\"markdown\\":\\"# K6\\"}}]}",
+        "DashboardBody": Object {
+          "Fn::Join": Array [
+            "",
+            Array [
+              "{\\"widgets\\":[{\\"type\\":\\"text\\",\\"width\\":24,\\"height\\":1,\\"x\\":0,\\"y\\":0,\\"properties\\":{\\"markdown\\":\\"# K6\\"}},{\\"type\\":\\"metric\\",\\"width\\":24,\\"height\\":6,\\"x\\":0,\\"y\\":1,\\"properties\\":{\\"view\\":\\"timeSeries\\",\\"title\\":\\"Virtual users\\",\\"region\\":\\"",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_vus\\",\\"metric_type\\",\\"gauge\\",{\\"label\\":\\"Virtual users\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}}]}",
+            ],
+          ],
+        },
         "DashboardName": "k6-aws-cloudwatch-cdk",
       },
       "Type": "AWS::CloudWatch::Dashboard",
