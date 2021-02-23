@@ -17,5 +17,20 @@ export class K6AwsCloudwatchCdkStack extends Stack {
     dashboard.addWidgets(
       k6Widget('Virtual users', [k6Metric('k6_vus', 'Virtual users', 'gauge')]),
     );
+
+    dashboard.addWidgets(
+      k6Widget(
+        'Average response time',
+        [
+          k6Metric('k6_http_req_sending', 'Sending'),
+          k6Metric('k6_http_req_receiving', 'Receiving'),
+          k6Metric('k6_http_req_handshaking', 'Handshaking'),
+          k6Metric('k6_http_req_connecting', 'Connecting'),
+          k6Metric('k6_http_req_waiting', 'Waiting'),
+          k6Metric('k6_http_req_blocked', 'Blocked'),
+        ],
+        true,
+      ),
+    );
   }
 }
