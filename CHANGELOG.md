@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.2.0...v1.3.0) (2021-02-23)
+
+
+### Features
+
+* **average-response:** add average response widget ([93edcca](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/commit/93edcca8f6d526b9dc2c475421eb0ee406604037))
+
 # [1.2.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.1.0...v1.2.0) (2021-02-22)
 
 
