@@ -15,14 +15,14 @@ test('k6Metric function returns label', () => {
 
 test('k6Metric function returns type', () => {
   expect(
-    k6Metric('nametest', 'labeltest', 'typetest').dimensions?.metric_type,
-  ).toEqual('typetest');
+    k6Metric('nametest', 'labeltest', 'counter').dimensions?.metric_type,
+  ).toEqual('counter');
 });
 
 test('k6Metric function returns statistic', () => {
-  expect(
-    k6Metric('nametest', 'labeltest', 'typetest', 'Sum').statistic,
-  ).toEqual('Sum');
+  expect(k6Metric('nametest', 'labeltest', 'counter', 'sum').statistic).toEqual(
+    'Sum',
+  );
 });
 
 test('k6Metric function returns default type value timing', () => {
