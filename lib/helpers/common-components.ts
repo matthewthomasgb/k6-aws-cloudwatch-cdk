@@ -1,6 +1,9 @@
 import { GraphWidget, Metric } from '@aws-cdk/aws-cloudwatch';
 import { Duration } from '@aws-cdk/core';
 
+type statistic = 'min' | 'max' | 'avg' | 'sum' | 'n' | 'pNN.NN';
+type metricType = 'timing' | 'counter' | 'gauge' | 'rate' | 'trend';
+
 export function k6Widget(
   title: string,
   leftMetrics: Array<Metric>,
@@ -19,17 +22,16 @@ export function k6Widget(
 export function k6Metric(
   name: string,
   label: string,
-  type = 'timing',
-  statistic = 'avg',
+  metricType: metricType = 'timing',
+  statistic: statistic = 'avg',
 ): Metric {
   return new Metric({
     namespace: 'k6',
     metricName: name,
     label: label,
-    // @ts-ignore
     period: Duration.seconds(1),
     dimensions: {
-      metric_type: type,
+      metric_type: metricType,
     },
     statistic: statistic,
   });
