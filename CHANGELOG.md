@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.5.0...v1.6.0) (2021-02-24)
+
+
+### Features
+
+* **data-transfer:** add data transfer widget ([835ffee](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/commit/835ffeeeede911a40a4ace095e392017978614f2))
+
 # [1.5.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.4.0...v1.5.0) (2021-02-24)
 
 
