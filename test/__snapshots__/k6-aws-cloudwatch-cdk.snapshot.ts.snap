@@ -17,7 +17,11 @@ Object {
               Object {
                 "Ref": "AWS::Region",
               },
-              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_http_req_sending\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Sending\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_receiving\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Receiving\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_handshaking\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Handshaking\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_connecting\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Connecting\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_waiting\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Waiting\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_blocked\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Blocked\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}}]}",
+              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_http_req_sending\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Sending\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_receiving\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Receiving\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_handshaking\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Handshaking\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_connecting\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Connecting\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_waiting\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Waiting\\",\\"period\\":1}],[\\"k6\\",\\"k6_http_req_blocked\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Blocked\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}},{\\"type\\":\\"metric\\",\\"width\\":24,\\"height\\":6,\\"x\\":0,\\"y\\":13,\\"properties\\":{\\"view\\":\\"timeSeries\\",\\"title\\":\\"Iteration duration\\",\\"region\\":\\"",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_iteration_duration\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Iteration\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}}]}",
             ],
           ],
         },

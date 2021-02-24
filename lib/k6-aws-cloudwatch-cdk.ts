@@ -32,5 +32,11 @@ export class K6AwsCloudwatchCdkStack extends Stack {
         true,
       ),
     );
+
+    dashboard.addWidgets(
+      k6Widget('Iteration duration', [
+        k6Metric('k6_iteration_duration', 'Iteration'),
+      ]),
+    );
   }
 }
