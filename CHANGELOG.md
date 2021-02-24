@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.4.0...v1.5.0) (2021-02-24)
+
+
+### Features
+
+* **request-rate:** add request rate - requests per second widget ([f1488cf](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/commit/f1488cfb8bf9350c2e872d37f83e31c84625586c))
+
 # [1.4.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.3.0...v1.4.0) (2021-02-24)
 
 
