@@ -46,5 +46,16 @@ export class K6AwsCloudwatchCdkStack extends Stack {
         true,
       ),
     );
+
+    dashboard.addWidgets(
+      k6Widget(
+        'Data transfer',
+        [
+          k6Metric('k6_data_sent', 'Sent', 'counter', 'sum'),
+          k6Metric('k6_data_received', 'Received', 'counter', 'sum'),
+        ],
+        false,
+      ),
+    );
   }
 }

@@ -25,7 +25,11 @@ Object {
               Object {
                 "Ref": "AWS::Region",
               },
-              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_http_reqs\\",\\"metric_type\\",\\"counter\\",{\\"label\\":\\"All requests\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}}]}",
+              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_http_reqs\\",\\"metric_type\\",\\"counter\\",{\\"label\\":\\"All requests\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}},{\\"type\\":\\"metric\\",\\"width\\":24,\\"height\\":6,\\"x\\":0,\\"y\\":25,\\"properties\\":{\\"view\\":\\"timeSeries\\",\\"title\\":\\"Data transfer\\",\\"region\\":\\"",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              "\\",\\"stacked\\":false,\\"metrics\\":[[\\"k6\\",\\"k6_data_sent\\",\\"metric_type\\",\\"counter\\",{\\"label\\":\\"Sent\\",\\"period\\":1,\\"stat\\":\\"Sum\\"}],[\\"k6\\",\\"k6_data_received\\",\\"metric_type\\",\\"counter\\",{\\"label\\":\\"Received\\",\\"period\\":1,\\"stat\\":\\"Sum\\"}]],\\"yAxis\\":{},\\"liveData\\":true}}]}",
             ],
           ],
         },
