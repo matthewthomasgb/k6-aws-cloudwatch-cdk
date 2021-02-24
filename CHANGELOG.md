@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.3.0...v1.4.0) (2021-02-24)
+
+
+### Features
+
+* **iteration-duration:** add iteration duration wiidget ([fdabbba](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/commit/fdabbba9b09966b21b06a6be7af3a527600b63a6))
+
 # [1.3.0](https://github.com/matthewthomasgb/k6-aws-cloudwatch-cdk/compare/v1.2.0...v1.3.0) (2021-02-23)
 
 
