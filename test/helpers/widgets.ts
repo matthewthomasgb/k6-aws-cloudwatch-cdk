@@ -3,4 +3,5 @@ export enum Widgets {
   Vus,
   AverageResponse,
   IterationDuration,
+  RequestRate,
 }
