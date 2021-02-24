@@ -38,5 +38,13 @@ export class K6AwsCloudwatchCdkStack extends Stack {
         k6Metric('k6_iteration_duration', 'Iteration'),
       ]),
     );
+
+    dashboard.addWidgets(
+      k6Widget(
+        'Request rate - Requests per second',
+        [k6Metric('k6_http_reqs', 'All requests', 'counter')],
+        true,
+      ),
+    );
   }
 }

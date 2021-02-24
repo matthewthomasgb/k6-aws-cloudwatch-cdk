@@ -21,7 +21,11 @@ Object {
               Object {
                 "Ref": "AWS::Region",
               },
-              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_iteration_duration\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Iteration\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}}]}",
+              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_iteration_duration\\",\\"metric_type\\",\\"timing\\",{\\"label\\":\\"Iteration\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}},{\\"type\\":\\"metric\\",\\"width\\":24,\\"height\\":6,\\"x\\":0,\\"y\\":19,\\"properties\\":{\\"view\\":\\"timeSeries\\",\\"title\\":\\"Request rate - Requests per second\\",\\"region\\":\\"",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              "\\",\\"stacked\\":true,\\"metrics\\":[[\\"k6\\",\\"k6_http_reqs\\",\\"metric_type\\",\\"counter\\",{\\"label\\":\\"All requests\\",\\"period\\":1}]],\\"yAxis\\":{},\\"liveData\\":true}}]}",
             ],
           ],
         },
