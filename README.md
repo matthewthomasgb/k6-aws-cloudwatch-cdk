@@ -40,7 +40,7 @@ The project configuration ensures ESLint and Prettier play nicely together.
 
 There are three categories of [tests](https://github.com/aws/aws-cdk/blob/ce9ee507caf9e4524c52c26a8cd3f255e6921e15/packages/%40aws-cdk/assert/README.md) you can write for AWS CDK apps.
 
-####📷 Snapshot tests
+#### 📷 Snapshot tests
 Snapshot tests test the synthesized AWS CloudFormation template against a previously-stored baseline template. This way, when you're refactoring your app, you can be sure that the refactored code works exactly the same way as the original. If the changes were intentional, you can accept a new baseline for future tests.
 The snapshot artifact should be committed alongside code changes, and reviewed as part of your code review process. It lives here - `test/__snapshots__`
 
