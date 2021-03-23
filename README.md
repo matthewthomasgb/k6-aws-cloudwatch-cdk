@@ -9,6 +9,8 @@ An AWS cloudwatch dashboard containing graphs for k6 performance metrics.
 
 [The AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) is an open source software development framework to define your cloud application resources using familiar programming languages.
 
+![screenshot](./assets/example.png)
+
 ## Purpose
 For fun, learning and profit 🤑 
 
