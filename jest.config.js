@@ -8,6 +8,7 @@ module.exports = {
   coverageDirectory: 'reports/coverage',
   collectCoverageFrom: [
     'lib/*.{js,jsx,ts}',
+    'lib/**/*.{js,jsx,ts}',
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
